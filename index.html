@@ -3,6 +3,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://use.fontawesome.com/03ee1c02f0.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <title>SurePower</title>
 </head>
 <body>
@@ -32,7 +38,7 @@
 
     <div class="line clearfix wrapper">
         <div class="logo">
-            <img src="img/logo.png" alt="Логотип">
+            <a href="#"><img src="img/logo.png" alt="Логотип"></a>
         </div>
         <div class="clearfix">
             <div class="properties">
@@ -55,13 +61,13 @@
     </div>
     <nav class="">
         <ul class="menu wrapper">
-            <li>home</li>
-            <li>about</li>
-            <li>products</li>
-            <li>services</li>
-            <li>rentals</li>
-            <li>learning</li>
-            <li>contact</li>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">rentals</a></li>
+            <li><a href="#">learning</a></li>
+            <li><a href="#">contact</a></li>
             <li><i class="fa fa-search" aria-hidden="true"></i></li>
         </ul>
     </nav>
@@ -69,15 +75,27 @@
 
 <main>
     <div class="slider">
-        <div class="slide-item"></div>
-        <div class="slide-item"></div>
-        <div class="slide-item"></div>
-        <div class="slide-item"></div>
-        <div class="text wrapper">
+        <div class="arrows arrow-left">
+            <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="slider_text">
             <h2>We provide innovative</h2>
             <h1>Battery back-up solutions for business.</h1>
             <p>VRLA BATTERIES ARE IN STOCK FOR IMMEDIATE DELIVERY.</p>
         </div>
+        <div class="arrows arrow-right">
+            <i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="quote clearfix wrapper">
+        <div class="quote_text">
+            <h5>Request a Free Site Survey or Quote.</h5>
+            <p>UPS Battery and Uninterruptible Power Supply Sales and Installation.</p>
+        </div>
+        <div class="button">
+            <button class="button_text">Get a Quote</button>
+        </div>
+
     </div>
 </main>
 
