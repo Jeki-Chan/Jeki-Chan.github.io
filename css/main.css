@@ -82,6 +82,7 @@ nav{
 .menu{
     color: #fff;
     text-transform: uppercase;
+    float: left;
 }
 ul{
      padding: 0;
@@ -97,14 +98,16 @@ li{
     padding-right: 15px;
     font-size: 16px;
 }
-li:last-child{
-    float: right;
-}
 .active{
     border-bottom: 7px solid #bd2631;
 }
 li:hover{
     border-bottom: 7px solid #bd2631;
+}
+.search{
+    float: right;
+    color: #fff;
+    margin: 27px 17px 0 0;
 }
 
 /* BODY*/
@@ -180,8 +183,7 @@ button{
     border-radius: 6px;
 
 }
-.button_text
-{
+.button_text{
     font-weight: bold;
     font-family: 'Hind', sans-serif;
     font-size: 14px;
