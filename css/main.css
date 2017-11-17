@@ -131,7 +131,7 @@ li:hover{
 .search{
     float: right;
     color: #fff;
-    margin: 2% 17px 0 0;
+    margin: 3% 17px 0 0;
     cursor: pointer;
     padding-right: 10%;
     padding-bottom: 2%;
@@ -144,13 +144,14 @@ main{
 }
 .slider{
     background: #000 url("../img/slide.png")top right no-repeat;
-    height: 642px;
+    max-height: 642px;
 }
 .slider_text{
-    padding-top: 290px;
+    padding-top: 26%;
     display: inline-block;
     margin-left: 47px;
     font-family: 'Hind', sans-serif;
+    padding-bottom: 32%;
 }
 h2{
     margin: 0;
@@ -170,7 +171,7 @@ h1{
     font-weight: 300;
 }
 .arrows{
-    margin-top: 330px;
+    margin-top: 35%;
     cursor: pointer;
 }
 .arrow-right{
@@ -305,6 +306,8 @@ button:hover{
     }
     .slider_text{
         width: 76%;
+        padding-top: 32%;
+        padding-bottom: 32%;
     }
 
 }
@@ -312,18 +315,42 @@ button:hover{
     .line-top_item{
         width: 55%;
     }
-    .button {
-        text-align: center;
-        float: none;
+    /*.button {
         margin: 2% 0;
+    }*/
+    .slider_text h2{
+        font-size: 28px;
+   }
+    h1{
+        font-size: 40px;
     }
-    .quote_text{
-        float: none;
-        width: 100%;
+    .slider_text p {
+        font-size: 20px;
     }
-    .fa-3x{
-        font-size: 2.5em;
+    h5 {
+        font-size: 26px;
     }
+    .quote_text p {
+        font-size: 18px;
+    }
+    button {
+        width: 124px;
+        height: 37px;
+    }
+    .button {
+        margin: 3% 0;
+    }
+    .quote_text {
+        width: 79%;
+    }
+    .slider_text {
+        padding-top: 24%;
+        padding-bottom: 17%;
+    }
+    .arrows {
+        margin-top: 29%;
+    }
+
 }
 @media screen and (max-width: 760px) {
     .block_img img{
@@ -333,25 +360,53 @@ button:hover{
     .hamburger{
         display: block;
         float: left;
+        margin-left: 7%;
+        margin-bottom: 2%;
     }
     .menu{
         display: none;
     }
-    .fa-3x{
-        font-size: 2em;
-    }
-    .properties{
-        float: none;
-        border-right: none;
-    }
     .prop{
-        margin: 1px 34%;
+        margin: 0;
+    }
+    .slider_text h2{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .slider_text p {
+        font-size: 16px;
+    }
+    .arrows {
+        margin-top: 25%;
+    }
+    .slider_text {
+        width: 70%;
+        padding-top: 20%;
+        padding-bottom: 10%;
     }
 }
 
 @media screen and (max-width: 620px) {
+    /*.prop{
+        font-size: 14px;
+    }
+    .properties{
+        float: none;
+        border-right: none;
+    }*/
 
-
+    .wrapper {
+        padding: 0 5%;
+    }
+    .logo{
+        padding-top: 2%;
+    }
+    .line-top {
+        padding-top: 5px;
+        padding-bottom: 1%;
+    }
 }
 
 @media screen and (max-width: 420px) {
