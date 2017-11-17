@@ -2,7 +2,7 @@
     font-family: 'Hind', sans-serif;
 }
 .wrapper{
-    padding: 0 130px;
+    padding: 0 10%;
 }
 .clearfix::after{
     content: '';
@@ -18,13 +18,16 @@ a{
 /* HEADER*/
 .line-top{
     background: #ededed;
-    height: 50px;
     padding-top: 10px;
+    padding-bottom: 1%;
+}
+.line-top_item{
+    float: left;
 }
 .city{
-    float: left;
-    margin-right: 49px;
-
+    display: inline-block;
+    margin-right: 45px;
+    margin-bottom: 1%;
 }
 select{
     background: #000;
@@ -35,20 +38,19 @@ select{
     height: 37px;
     width: 130px;
     cursor: pointer;
-    font-family: Hind-Regular, sans-serif;
+    font-family: 'Hind-Regular', sans-serif;
 }
 option{
-    font-family: Hind-Regular, sans-serif;
-
+    font-family: 'Hind-Regular', sans-serif;
 }
 .phone{
-    float: left;
+    display: inline-block;
     margin-right: 30px;
     padding-top: 11px;
     font-size: 14px;
 }
 .address{
-    float: left;
+    display: inline-block;
     padding-top: 11px;
     font-size: 14px;
 }
@@ -59,12 +61,10 @@ option{
 .icons i{
     color: black;
     margin-left: 20px;
-
  }
 .line{
-    height: 141px;
-    box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 .logo{
     float: left;
@@ -99,6 +99,7 @@ nav{
     color: #fff;
     text-transform: uppercase;
     float: left;
+    padding-left: 130px;
 }
 ul{
      padding: 0;
@@ -125,6 +126,7 @@ li:hover{
     color: #fff;
     margin: 27px 17px 0 0;
     cursor: pointer;
+    padding-right: 10%;
 }
 
 /* BODY*/
@@ -173,12 +175,12 @@ h1{
 }
 .quote{
     background: #bd2631;
-    height: 126px;
 }
 .quote_text{
-    padding-top: 29px;
+    padding-top: 3%;
     float: left;
     font-family: 'Hind', sans-serif;
+    width: 80%;
 }
 h5{
     margin: 0;
@@ -223,7 +225,7 @@ button:hover{
     width: 50%;
     background: #000 url("../img/Products.png") no-repeat;
     background-size: cover;
-    padding: 162px 111px 0 99px;
+    padding: 12% 111px 0 99px;
     box-sizing: border-box;
 }
 .block_text:last-child{
@@ -248,13 +250,100 @@ button:hover{
     box-sizing: border-box;
     padding: 160px 0 0 107px;
 }
-.block_exc img{
-    float: right;
+.block_exc img,
+.block_item img{
     width: 100%;
     height: 100%;
+}
+.block_exc img{
+    float: right;
 }
 .block_ex{
     background: #bd2631;
     padding: 160px 0 0 130px;
     width: 25%;
+}
+
+                /*RESPONSIVE   */
+@media screen and (max-width: 1060px) {
+    .city {
+        margin-right: 2%;
+    }
+    select {
+        width: 120px;
+    }
+    .icons i {
+        margin-left: 10px;
+    }
+    .logo{
+        float: none;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+    .prop{
+        margin: 0 11%;
+    }
+    .properties:first-child{
+        margin-right: 4%;
+    }
+    li {
+        padding-left: 5px;
+        height: 70px;
+        padding-top: 28px;
+        padding-right: 5px;
+    }
+    .menu {
+        padding-left: 85px;
+    }
+    .block_img{
+        padding: 15% 0 0 6%;
+    }
+    .slider_text{
+        width: 77%;
+    }
+
+}
+@media screen and (max-width: 920px) {
+    .line-top_item{
+        width: 55%;
+    }
+    .slider_text{
+        width: 77%;
+    }
+    .button {
+        text-align: center;
+        float: none;
+        margin: 2% 0;
+    }
+    .quote_text{
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .block_img img{
+        height: 25%;
+        padding: 15% 0 0 6%;
+    }
+    .line-top_item,
+    .icons{
+        float: none;
+    }
+    .line-top_item div {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 390px) {
+    .line-top div {
+        display: block;
+    }
 }
