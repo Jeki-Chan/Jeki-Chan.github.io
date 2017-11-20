@@ -63,7 +63,7 @@ option{
     margin-left: 20px;
  }
 .line{
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 .logo{
@@ -100,6 +100,7 @@ nav{
     text-transform: uppercase;
     float: left;
     padding-left: 130px;
+    font-family: Hind-Regular , sans-serif;
 }
 .hamburger{
     color: #fff;
@@ -131,7 +132,7 @@ li:hover{
 .search{
     float: right;
     color: #fff;
-    margin: 3% 17px 0 0;
+    margin: 2% 17px 0 0;
     cursor: pointer;
     padding-right: 10%;
     padding-bottom: 2%;
@@ -147,11 +148,11 @@ main{
     max-height: 642px;
 }
 .slider_text{
-    padding-top: 26%;
+    padding-top: 20%;
     display: inline-block;
     margin-left: 47px;
     font-family: 'Hind', sans-serif;
-    padding-bottom: 32%;
+    padding-bottom: 20%;
 }
 h2{
     margin: 0;
@@ -171,7 +172,7 @@ h1{
     font-weight: 300;
 }
 .arrows{
-    margin-top: 35%;
+    margin-top: 22%;
     cursor: pointer;
 }
 .arrow-right{
@@ -219,6 +220,9 @@ button{
 button:hover{
     cursor: pointer;
 }
+/*.block{
+    height: 452px;
+}*/
 .block_img,
 .block_text,
 .block_item{
@@ -252,9 +256,10 @@ button:hover{
     font-size: 14px;
     line-height: 2.1;
 }
+
 .block_img{
     box-sizing: border-box;
-    padding: 160px 0 0 107px;
+    padding: 12% 8%;
 }
 .block_exc img,
 .block_item img{
@@ -306,18 +311,22 @@ button:hover{
     }
     .slider_text{
         width: 76%;
-        padding-top: 32%;
-        padding-bottom: 32%;
+        padding-top: 26%;
+        padding-bottom: 19%;
+    }
+    .arrows {
+        margin-top: 29%;
     }
 
 }
 @media screen and (max-width: 920px) {
-    .line-top_item{
-        width: 55%;
+    .line-top_item {
+        width: 63%;
     }
-    /*.button {
-        margin: 2% 0;
-    }*/
+    .block_img img{
+        height: 30%;
+        padding: 15% 0 0 6%;
+    }
     .slider_text h2{
         font-size: 28px;
    }
@@ -331,7 +340,7 @@ button:hover{
         font-size: 26px;
     }
     .quote_text p {
-        font-size: 18px;
+        font-size: 16px;
     }
     button {
         width: 124px;
@@ -348,15 +357,11 @@ button:hover{
         padding-bottom: 17%;
     }
     .arrows {
-        margin-top: 29%;
+        margin-top: 28%;
     }
 
 }
 @media screen and (max-width: 760px) {
-    .block_img img{
-        height: 25%;
-        padding: 15% 0 0 6%;
-    }
     .hamburger{
         display: block;
         float: left;
@@ -386,17 +391,35 @@ button:hover{
         padding-top: 20%;
         padding-bottom: 10%;
     }
+    .quote_text {
+             width: 79%;
+         }
+    .quote_text p {
+        font-size: 14px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    button {
+        width: 96px;
+        height: 33px;
+    }
+    .block_text{
+        width: 100%;
+        height: 400px;
+    }
+    .block_img, .block_item{
+        width: 50%;
+        height: 350px;
+    }
+    .block_img img {
+        padding: 9% 0 0 27%;
+        height: 40%;
+    }
+
 }
 
 @media screen and (max-width: 620px) {
-    /*.prop{
-        font-size: 14px;
-    }
-    .properties{
-        float: none;
-        border-right: none;
-    }*/
-
     .wrapper {
         padding: 0 5%;
     }
@@ -407,14 +430,100 @@ button:hover{
         padding-top: 5px;
         padding-bottom: 1%;
     }
+    .slider_text{
+        margin-left: 43px;
+    }
+    .arrow-left {
+        margin-left: 0;
+    }
+    .logo img{
+        width: 270px;
+    }
+    .block_text {
+        height: 350px;
+    }
+    .block_img, .block_item {
+        height: 300px;
+    }
+    .block_img img {
+        height: 36%;
+        padding: 15% 0 0 25%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .properties {
+        float: none;
+    }
+    .prop{
+        margin-left: 33%;
+    }
+    button {
+        height: 33px;
+    }
+    .quote_text {
+        width: 74%;
+    }
 }
 
 @media screen and (max-width: 420px) {
-
+    .logo img {
+        width: 225px;
+    }
+    .prop{
+        margin-left: 26%;
+    }
+    .icons {
+        float: none;
+    }
+    .line-top div{
+        display: block;
+    }
+    .line-top_item{
+        float: none;
+        width: 100%;
+    }
+    .line-top{
+        padding-left: 25%;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .quote_text {
+        width: 100%;
+    }
+    .button {
+        float: none;
+        margin: 0;
+        padding-left: 91px;
+        padding-bottom: 6px;
+    }
+    .slider_text h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .slider_text p {
+        font-size: 14px;
+    }
+    .slider_text {
+        margin-left: 30px;
+    }
+    .block_text {
+        height: 320px;
+    }
+    .block_img, .block_item {
+        height: 260px;
+    }
 }
 
 @media screen and (max-width: 390px) {
-    .line-top div {
-        display: block;
+    .slider_text {
+        margin-left: 10px;
+    }
+    .block_img img {
+        height: 29%;
+        padding: 15% 0 0 22%;
     }
 }
